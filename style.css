@@ -45,9 +45,10 @@ body {
     position: relative;
 }
 
+/* 
 .gelap {
     -webkit-filter: brightness(40%);
-}
+} */
 
 .pembatas-kiri {
     width: 25%;
@@ -227,38 +228,18 @@ body {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
 
-    .btn-reg-right button,
     .prevs,
     .nexts,
     .text {
-        font-size: 11px
+        font-size: 11px;
     }
-}
 
-element.style {
-    width: 100%;
-    position: absolute;
-}
-
-.button-left-right {
-    background-color: transparent;
-    border: 1px solid black;
-    color: black;
-    border-radius: 15px;
-    display: inline;
-    width: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* padding: 20px; */
-    margin: 70px;
-}
-
-.button-div {
-    display: inline;
-    position: absolute;
-
+    .btn-start-left button,
+    .btn-reg-right button {
+        font-size: 11px;
+        height: 30px;
+        width: 80px;
+    }
 }
