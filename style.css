@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.logo {
+    width: 25%;
+    padding: 6px;
+    margin-left: 10px;
+    margin-right: 250px;
+}
+
+.header nav {
+    background-color: rgba(2, 71, 48, 0.863);
+}
+
+.menu-utama {
+    margin: auto;
+    list-style: none;
+}
+
+.menu-utama a {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.menu-utama li {
+    float: left;
+    padding: 10px;
+    margin: 3px;
+}
+
+.actives {
+    border-bottom: 1px solid white;
+}
+
+/* Slideshow container */
+.slideshows-containers {
+    max-width: 100%;
+    position: relative;
+}
+
+.gelap {
+    -webkit-filter: brightness(40%);
+}
+
+.pembatas-kiri {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pembatas-kanan {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Next & previous buttons */
+.prevs,
+.nexts {
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    padding: 5px 15px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prevs {
+    position: absolute;
+    right: 0;
+    margin: auto;
+}
+
+.nexts {
+    position: absolute;
+    left: 0;
+    margin: auto;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevs:hover,
+.nexts:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+/* Caption text */
+/* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+} */
+
+/*midle btn*/
+.btn-start-left {
+    position: absolute;
+    top: 0;
+    width: 45%;
+    height: 100%;
+}
+
+.btn-start-left button {
+    cursor: pointer;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    margin-top: 60%;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 5px 10px;
+    height: 50px;
+    width: 150px;
+}
+
+.btn-reg-right {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn-reg-right button {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    margin: 0;
+    margin-top: 60%;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 5px 10px;
+    height: 50px;
+    width: 150px;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fades {
+    -webkit-animation-name: fades;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fades;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fades {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fades {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .btn-reg-right button,
+    .prevs,
+    .nexts,
+    .text {
+        font-size: 11px
+    }
+}
+
+element.style {
+    width: 100%;
+    position: absolute;
+}
+
+.button-left-right {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    border-radius: 15px;
+    display: inline;
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding: 20px; */
+    margin: 70px;
+}
+
+.button-div {
+    display: inline;
+    position: absolute;
+
+}
