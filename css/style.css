@@ -9,7 +9,7 @@
 #page-container {
     position: relative;
     text-align: center;
-    background-image: url('vectorwhite.png');
+    background-image: url('images/vectorwhite.png');
     background-size: cover;
 }
 #footer-container {
@@ -19,7 +19,7 @@
 }
 #content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
-  background-image: url('footer.png');
+  background-image: url('images/footer.png');
 }
 #footer {  
     bottom: 0;
