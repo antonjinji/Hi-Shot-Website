@@ -25,6 +25,11 @@ h6
   min-width: 100vw;
   min-height: 100vh;
 }
+#about-us-black {
+  background: rgba(0,0,0,0.7);
+  width: 100vw;
+  height: 100vh;
+}
 #footer-container {
     position: relative;
     text-align: center;
@@ -80,18 +85,30 @@ h6
   display:block;
   width: 115px;
   height: 36px;
+  color: white;
   background-color: rgba(0,0,0,0);
-  border :1px solid black;
+  border :2px solid white;
   border-radius: 10%;
   transition: 0.4s;
 
 }
 #seemore-button:hover {
   background-color: black;
-  color: black;
+  border-color: black;
+  color: white;
 }
 .button-container {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin: 4px 2px;
+}
+#whiteline {
+  padding-top: 120px;
+  height: 400px;
+}
+#hishot-logo {
+  width: 319.75px;
+  height: 102px;
+  padding-top: 150px;
 }
