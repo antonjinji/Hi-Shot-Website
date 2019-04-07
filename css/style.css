@@ -1,16 +1,29 @@
-/*#bg1 { 
-  top: 0; 
-  left: 0; 
-  right: 0;
-   Preserve aspet ratio 
-  min-width: 100%;
-  min-height: 100%;
-}*/
+body
+{
+  margin: 0;
+  padding: 0;
+}
+h2
+{
+  color: #1D6258;
+}
+h3
+{
+  color: #1D6258;
+}
+h6
+{
+  color: white;
+}
 #page-container {
-    position: relative;
-    text-align: center;
-    background-image: url('images/vectorwhite.png');
+    background-image: url('../images/vectorwhite.png');
     background-size: cover;
+}
+#about-us-page-container {
+  background-image: url('../images/About-Us.jpg');
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 #footer-container {
     position: relative;
@@ -18,15 +31,15 @@
     background-size: cover;
 }
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-  background-image: url('images/footer.png');
+  /*padding-bottom: 2.5rem;    /* Footer height */*/
+  position: relative;
+  background-image: url('../images/footer.png');
+  background-size: cover;
+  height: 330px;
 }
-#footer {  
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;   /* Footer height */
+#footer {
+  background-position: center;
+  justify-content: center;
 }
 #content {
     font-size: 32px;
@@ -34,23 +47,51 @@
     font-weight: 600;
     letter-spacing: .004em;
     text-align: center;
-    padding-top: 50px;
-}
-h2{
-    margin: 0;
+    padding-top: 75px;
 }
 .flex-container {
-width: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  width: 70vw;
+  padding-left: 15vw;
+  height: 78vh;
 }
 
 .flex-container > div {
   width: 100%;
   margin: 10px;
   text-align: center;
-  line-height: 75px;
+  line-height: 30px;
   font-size: 30px;
+}
+
+.flex-container-social-media {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#seemore-button {
+  display:block;
+  width: 115px;
+  height: 36px;
+  background-color: rgba(0,0,0,0);
+  border :1px solid black;
+  border-radius: 10%;
+  transition: 0.4s;
+
+}
+#seemore-button:hover {
+  background-color: black;
+  color: black;
+}
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
