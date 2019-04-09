@@ -7,8 +7,6 @@ body {
     height: 2000px;
 }
 
-
-
 nav.navigasi {
     position: -webkit-sticky;
     position: sticky;
@@ -27,8 +25,13 @@ nav.navigasi {
 
 }
 
+.navbar-nav {
+    margin-right: 2em;
+}
+
+
 nav ul li {
-    margin: 2px;
+    margin: 5px;
 }
 
 nav ul li a {
