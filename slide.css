@@ -4,260 +4,301 @@
 
 body {
     font-family: Verdana, sans-serif;
-    margin: 0;
-    padding: 10px;
+    height: 2000px;
+}
+
+
+
+nav.navigasi {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: darkcyan;
+    z-index: 2;
 }
 
 .logo {
-    width: 25%;
-    padding: 6px;
-    margin-left: 10px;
-    margin-right: 250px;
+    width: 40%;
 }
 
-.header nav {
-    background-color: rgba(2, 71, 48, 0.863);
+.navigasi .navbar-nav .nav-link {
+    color: whitesmoke;
+
 }
 
-.menu-utama {
-    margin: auto;
-    list-style: none;
-}
-
-.menu-utama a {
-    cursor: pointer;
-    color: aliceblue;
-}
-
-.menu-utama li {
-    float: left;
-    padding: 10px;
-    margin: 3px;
-}
-
-.actives {
-    border-bottom: 1px solid white;
-}
-
-/* Slideshow container */
-.slideshows-containers {
-    max-width: 100%;
-    position: relative;
-}
-
-/* 
-.gelap {
-    -webkit-filter: brightness(40%);
-} */
-
-.pembatas-kiri {
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.pembatas-kanan {
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/* Next & previous buttons */
-.prevs,
-.nexts {
-    cursor: pointer;
-    position: absolute;
-    top: 47%;
-    padding: 5px 15px;
-    margin: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.prevs {
-    position: absolute;
-    right: 0;
-    margin: auto;
-}
-
-.nexts {
-    position: absolute;
-    left: 0;
-    margin: auto;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prevs:hover,
-.nexts:hover {
-    /* background-color: rgba(0, 0, 0, 0.8); */
-    border: 1px solid white;
-    border-radius: 50%;
+nav ul li {
     margin: 2px;
 }
 
-/* Caption text */
-/* .text {
-    color: #f2f2f2;
+nav ul li a {
     font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
-    text-align: center;
-} */
-
-/*midle btn*/
-.btn-start-left {
-    position: absolute;
-    top: 0;
-    width: 45%;
-    height: 100%;
 }
 
-.btn-start-left button {
-    cursor: pointer;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 25%;
-    margin-top: 60%;
-
-    border: 1px solid white;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    background-color: transparent;
-    padding: 5px 10px;
-    height: 50px;
-    width: 150px;
+.navigasi .navbar-nav .nav-item a:hover,
+.actived {
+    color: whitesmoke;
 }
 
-.btn-reg-right {
-    width: 45%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
+.navigasi .navbar-nav .nav-item a:hover:not(.actived) {
+    border-bottom: 2px solid wheat;
+    color: black;
 }
 
-.btn-reg-right button {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 25%;
-    margin: 0;
-    margin-top: 60%;
-
-    border: 1px solid white;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    background-color: transparent;
-    padding: 5px 10px;
-    height: 50px;
-    width: 150px;
+.actived {
+    color: whitesmoke;
+    border-radius: 5%;
+    border-bottom: 2px solid wheat;
 }
 
 
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+.left-posision {
     position: absolute;
-    top: 0;
+    left: 12em;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
+.right-posision {
+    position: absolute;
+    right: 12em;
+}
+
+.cirle {
     border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    position: relative;
-    left: 48%;
-    top: 50%;
+    border: 1px solid white;
+    padding: 15px;
 }
 
-.indicators {
-
-    width: 100%;
+.caption {
     position: absolute;
-    height: 230px;
-    bottom: 1px;
+    top: 22.6em;
+    left: 32em;
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
+.btn-outline-secondary {
+    width: 150px;
+    padding: 10px;
+    display: inline-block;
+    color: whitesmoke;
 }
 
-/* Fading animation */
-.fades {
-    -webkit-animation-name: fades;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fades;
-    animation-duration: 1.5s;
+.carousel-indicators {
+    position: absolute;
+    bottom: 4em;
+    z-index: 1;
 }
 
-@-webkit-keyframes fades {
-    from {
-        opacity: .4
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: darkcyan;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .nav-item {
+        width: 100px;
     }
 
-    to {
-        opacity: 1
+    .left-posision {
+        position: absolute;
+        left: 9em;
     }
+
+    .right-posision {
+        position: absolute;
+        right: 9em;
+    }
+
+    .cirle {
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .caption {
+        position: absolute;
+        top: 16em;
+        left: 22.9em;
+
+    }
+
+    .btn-outline-secondary {
+        width: 110px;
+        padding: 5px;
+        display: inline-block;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 35px;
+    }
+
+    .carousel-indicators li {
+        box-sizing: content-box;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 18px;
+        height: 18px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+        border-radius: 50%;
+    }
+
 }
 
-@keyframes fades {
-    from {
-        opacity: .4
+@media only screen and (max-width: 700px) {
+    .nav-item {
+        width: 100px;
     }
 
-    to {
-        opacity: 1
+    .left-posision {
+        position: absolute;
+        left: 7em;
+    }
+
+    .right-posision {
+        position: absolute;
+        right: 7em;
+    }
+
+    .cirle {
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .caption {
+        position: absolute;
+        top: 10.8em;
+        left: 15.3em;
+
+    }
+
+    .btn-outline-secondary {
+        width: 85px;
+        padding: 5px;
+        display: inline-block;
+        color: whitesmoke;
+        font-size: 17px;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .carousel-indicators li {
+        box-sizing: content-box;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+        border-radius: 50%;
     }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 500px) {
-
-    .prevs,
-    .nexts,
-    .text {
-        font-size: 20px;
-        z-index: 2;
+    .nav-item {
+        width: 100px;
     }
 
-    .btn-start-left button,
-    .btn-reg-right button {
-        font-size: 9px;
-        height: 30px;
-        width: 65px;
-        z-index: 1;
+    .left-posision {
+        position: absolute;
+        left: 5em;
     }
 
-    .indicators {
-        font-size: 1px;
-        height: 75px;
+    .right-posision {
+        position: absolute;
+        right: 5em;
+    }
+
+    .cirle {
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 1px;
+    }
+
+
+    .caption {
+        position: absolute;
+        top: 6em;
+        left: 8.8em;
+
+    }
+
+    .btn-outline-secondary {
+        width: 50px;
+        padding: 1px;
+        display: inline-block;
+        color: whitesmoke;
+        font-size: 10px;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .carousel-indicators li {
+        box-sizing: content-box;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 10px;
+        height: 10px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+        border-radius: 50%;
     }
 }
