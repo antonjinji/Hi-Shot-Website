@@ -3,51 +3,71 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Get In Touch</title>
+    <title>Hot to the Touch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="main.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="bg-img">
-        <img src="../Office-Lighting-5.jpg" alt="">
+<div class="backGroundimage">
+    <div class="leftSide">
+        <form action="">
+            <h1 style="text-align: center;">GET IN TOUCH</h1>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="nameInput" placeholder="Name">
+                    </td>
+                    <td>
+                        <input type="text" name="" id="emailInput" placeholder="Email Address">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <input type="text" name="" id="subjectInput" placeholder="Subject">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <textarea name="" id="messageInput" cols="30" rows="5" placeholder="Enter your message"s></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <button class="formButton">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="rightSide">
+        <h1 style="text-align: center;" id="subtitle">OUR ADDRESS</h1>
+        <p>BINUS UNIVERSITY @Alam Sutera</p>
+       
+        <div class="address">
+                <img src="location-white-icon.png" alt="">
+                Address:  Jl. Jalur Sutera Barat Kav. 21, Alam Sutera, Tangerang
+        </div>
+        
+        <div class="telephone">
+                <img src="phone-icon-white.png" alt="">
+                Phone: 1. 089829937273 
+                         <br><p class="space">2.083389438949</p>
+        </div>
+
+        <div class="email">
+                <img src="email.png" alt="">
+                Email: hishot2019@himti.org
+        </div>
         
     </div>
 
-    <div class="opacity"></div>
-    
-    <div class="split left">
-        <div class="centered">
-            <p>GET IN TOUCH</p>
-            <form action="">
-                <table>
-                    <tr>
-                        <td><input type="text" placeholder="NAME"></td>
-                        <td><input type="text" placeholder="Email Address"></td>
-                    </tr>
+</div>
 
-                    <tr>
-                        <td><input type="text" placeholder="Subject"></td>
-                    </tr>
-
-                    <tr>
-                        <td><textarea name="txtArea" id="txtMessage" cols="30" rows="10" placeholder="Enter your message"></textarea></td>
-                    </tr>
-
-                    <tr>
-                        <td><button type="submit">Submit</button></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-    </div>
-
-    <div class="split right">
-        <div class="centered">
-          <p>OUR LOCATION</p>
-        </div>
-    </div>
 </body>
 </html>
